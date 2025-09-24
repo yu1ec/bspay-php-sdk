@@ -32,7 +32,7 @@ class Bootstrap
 
         // SDK版本号
         if (!defined("SDK_VERSION")) {
-            define("SDK_VERSION", "php#v2.1.1");
+            define("SDK_VERSION", "php#v2.0.18-patch2");
         }
 
         // API接口版本号
