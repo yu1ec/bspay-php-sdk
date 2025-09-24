@@ -22,6 +22,9 @@ class BsPay extends BsPayRequestV2
     private static $merConfigMap = array();
 
     public static function init($config_info, $is_object=false, $merchantKey = 'default'){
+        
+        // 确保SDK常量已初始化
+        \BsPaySdk\Bootstrap::init();
 
         if (empty($config_info)){
             try {

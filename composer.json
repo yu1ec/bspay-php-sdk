@@ -1,6 +1,29 @@
 {
-    "name": "huifurepo/dg-php-sdk",
+    "name": "yu1ec/dg-php-sdk",
     "description": "汇付天下斗拱SDK-PHP版",
+    "type": "library",
     "license": "MIT",
-    "require": {}
+    "keywords": ["payment", "sdk", "huifurepo", "dg"],
+    "require": {
+        "php": ">=5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "BsPaySdk\\": "BsPaySdk/"
+        }
+    },
+    "archive": {
+        "exclude": [
+            "BsPayDemo",
+            "BsPayDemo/*",
+            "/BsPayDemo/**",
+            ".git*",
+            "*.log",
+            "tests",
+            "test",
+            "phpunit.xml*"
+        ]
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
